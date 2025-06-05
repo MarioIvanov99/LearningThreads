@@ -5,6 +5,8 @@ public class Main {
         System.out.println("main start");
         TalkThread talk = new TalkThread();
         talk.start();
+        Thread walk = new Thread(new WalkThread());
+        walk.start();
         System.out.println("main ended!");
     }
 }
